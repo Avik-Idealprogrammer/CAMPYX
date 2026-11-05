@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#102f28">
+    <title>Portal Sign In | DDUGU Smart Campus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portal-login.css">
+    <script src="api-client.js" defer></script>
+    <script src="portal-login.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#login-main">Skip to content</a>
+    <main class="login-shell" id="login-main">
+      <a class="login-brand" href="index.html" aria-label="DDUGU Smart Campus public site"><span class="brand-mark" aria-hidden="true">DDU</span><span><strong>DDUGU</strong><small>Smart Campus</small></span></a>
+      <section class="login-panel" aria-labelledby="login-title">
+        <p class="eyebrow" id="login-role-label">CAMPUS PORTAL</p>
+        <h1 id="login-title">Sign in</h1>
+        <p class="login-intro">Use your institutional account. Your role and permissions are checked by the server.</p>
+        <form id="portal-login-form" class="portal-login-form">
+          <label>Email<input name="email" type="email" autocomplete="username" maxlength="254" required></label>
+          <label>Password<input name="password" type="password" autocomplete="current-password" maxlength="256" required></label>
+          <p id="login-status" class="login-status" role="alert" aria-live="assertive"></p>
+          <button type="submit" id="login-submit">Sign in securely <span aria-hidden="true">↗</span></button>
+        </form>
+        <a id="open-portal-demo" class="demo-login-link" href="student-portal.html?demo=1">Open the fictional demo instead</a>
+      </section>
+      <footer class="login-footer"><span>Independent developer prototype · Not an official DDUGU service</span><a href="index.html">Return to public site</a></footer>
+    </main>
+  </body>
+</html>

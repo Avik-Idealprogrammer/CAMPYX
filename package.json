@@ -1,0 +1,16 @@
+{
+  "name": "ddugu-smart-campus-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static demo of the DDUGU Smart Campus landing and role portals",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "check:syntax": "node --check app.js && node --check student-portal.js && node --check faculty-portal.js && node --check admin-portal.js && node --check booking-rules.js && node --check admin/login/admin-login.js",
+    "check:html": "html-validate index.html student-portal.html faculty-portal.html admin-portal.html admin/login/index.html",
+    "validate": "npm run check:syntax && npm test && npm run check:html"
+  },
+  "devDependencies": {
+    "happy-dom": "21.0.4",
+    "html-validate": "^11.18.0"
+  }
+}
